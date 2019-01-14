@@ -1,0 +1,33 @@
+
+<div class="container-fluid" style="height: 95%">
+  <div class="row" style="height: 30%;margin-bottom: 0.5rem">
+    <div class="col-3" style="height: 100%">
+      <app-kpi-chartist [data]="prData" chartLabel="Performance Ratio" chartId="pr" ></app-kpi-chartist>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-kpi-chartist [data]="cufData" chartLabel="Cuf" chartId="cuf" ></app-kpi-chartist>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-kpi-chartist [data]="paData" chartLabel="Availability" chartId="pa" ></app-kpi-chartist>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-kpi-chartist [data]="revData" chartLabel="Revenue" chartId="revenue" ></app-kpi-chartist>
+    </div>
+  </div>
+  <div class="row" style="height: 35%;margin-bottom: 0.5rem">
+    <div class="col-9" style="height: 100%">
+      <app-trend-chartist [data]="actData" chartId="act_power" chartLabel="Power Trend"></app-trend-chartist>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-radial-chartist [data]="radialData" chartId="radi" chartLabel="Radial Data"></app-radial-chartist>
+    </div>
+  </div>
+  <div class="row" style="height: 30%;">
+    <div class="col-9" style="height: 100%">
+      <app-stack-chartist [data]="stackData" chartId="stack" chartLabel="Energy"></app-stack-chartist>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-pie-chartist [data]="radialData" chartId="radi1" chartLabel="Radial Data"></app-pie-chartist>
+    </div>
+  </div>
+</div>

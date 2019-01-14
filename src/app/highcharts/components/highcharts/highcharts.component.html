@@ -1,0 +1,33 @@
+
+<div class="container-fluid" style="height: 95%">
+  <div class="row" style="height: 30%;margin-bottom: 0.5rem">
+    <div class="col-3" style="height: 100%">
+      <app-kpi-highcharts [data]="prData" yLabel="Performance Ratio" chartId="pr" ></app-kpi-highcharts>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-kpi-highcharts [data]="cufData" yLabel="Cuf" chartId="cuf" ></app-kpi-highcharts>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-kpi-highcharts [data]="paData" yLabel="Availability" chartId="pa" ></app-kpi-highcharts>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-kpi-highcharts [data]="revData" yLabel="Revenue" chartId="revenue" ></app-kpi-highcharts>
+    </div>
+  </div>
+  <div class="row" style="height: 35%;margin-bottom: 0.5rem">
+    <div class="col-9" style="height: 100%">
+      <app-trend-highcharts [data]="powData" yLabel="Power Trend" chartId="power" ></app-trend-highcharts>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-donut-highcharts [data]="radialData" yLabel="Radial Data" chartId="radial"></app-donut-highcharts>
+    </div>
+  </div>
+  <div class="row" style="height: 31%;">
+    <div class="col-9" style="height: 100%">
+      <app-stack-highcharts [data]="stackData" yLabel="Energy" chartId="energy" ></app-stack-highcharts>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-scatter-highcharts [data]="scatterData" yLabel="Scatter" chartId="scatter" ></app-scatter-highcharts>
+    </div>
+  </div>
+</div>

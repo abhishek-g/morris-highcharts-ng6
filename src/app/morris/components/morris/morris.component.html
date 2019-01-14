@@ -1,0 +1,36 @@
+
+<div class="container-fluid" style="height: 95%">
+  <div class="row" style="height: 30%;margin-bottom: 0.5rem">
+    <div class="col-3" style="height: 100%">
+      <app-kpi ylabel="PR" chartLabel="Performance Ratio" [data]="prData"></app-kpi>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-kpi ylabel="CUF" chartLabel="Cuf" [data]="cufData"></app-kpi>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-kpi ylabel="Availability" chartLabel="Availability" [data]="paData"></app-kpi>
+    </div>
+    <div class="col-3" style="height: 100%">
+      <app-kpi ylabel="Revenue" chartLabel="Revenue" [data]="revData"></app-kpi>
+    </div>
+  </div>
+  <div class="row" style="height: 35%;margin-bottom: 0.5rem">
+    <div class="col-9" style="height: 100%">
+      <app-trend ylabel="Active Power" chartLabel="Power trend" [data]="actData"></app-trend>
+    </div>
+
+    <div class="col-3" style="height: 100%">
+      <app-radial chartLabel="Radial Data" [data]="actData"></app-radial>
+    </div>
+  </div>
+  <div class="row" style="height: 30%;">
+    <div class="col-9" style="height: 100%">
+      <app-stack [ylabel]="yLabel" chartLabel="Energy Data" [data]="energyData"></app-stack>
+    </div>
+
+    <div class="col-3" style="height: 100%">
+      <app-radial chartLabel="Radial Data" [data]="actData"></app-radial>
+    </div>
+  </div>
+
+</div>
